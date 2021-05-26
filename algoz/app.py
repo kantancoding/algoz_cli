@@ -1,4 +1,5 @@
 import argparse
+from algoz.search import breadth_first
 
 
 def main():
