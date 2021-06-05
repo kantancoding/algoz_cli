@@ -1,5 +1,6 @@
 import argparse
-from algoz.search import breadth_first
+from search import breadth_first
+from search import depth_first
 
 
 def main():
@@ -27,7 +28,7 @@ def main():
     parser.add_argument(
         "-o",
         "--order",
-        choices=["pre-order", "post-order", "level-order"],
+        choices=["pre-order", "post-order", "in-order", "level-order"],
         required=True,
         help="The order in which to travers the tree",
     )
@@ -46,9 +47,9 @@ def main():
         return
 
     # binary search
-    if args.search_algorithm == "binary-search":
-        binary.search(args)
-        return
+    # if args.search_algorithm == "binary-search":
+        # binary.search(args)
+        # return
 
 
 if __name__ == "__main__":

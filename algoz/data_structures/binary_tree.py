@@ -1,5 +1,5 @@
-from algoz.data_structures.node import Node
-from algoz.data_structures.queue import Queue
+from data_structures.node import Node
+from data_structures.queue import Queue
 
 
 class BinaryTree:
