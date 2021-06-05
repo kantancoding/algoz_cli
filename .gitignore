@@ -1,5 +1,6 @@
 # vim
 .vim 
+.python-root
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
