@@ -1,6 +1,7 @@
 import argparse
 from search import breadth_first
 from search import depth_first
+from search import binary
 
 
 def main():
@@ -47,9 +48,9 @@ def main():
         return
 
     # binary search
-    # if args.search_algorithm == "binary-search":
-        # binary.search(args)
-        # return
+    if args.search_algorithm == "binary-search":
+        binary.search(args)
+        return
 
 
 if __name__ == "__main__":
