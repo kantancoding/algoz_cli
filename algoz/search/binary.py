@@ -4,15 +4,16 @@ from data_structures.binary_tree import BinaryTree
 def binary_search(target, root):
     if root:
 
-        if root.data == target:
+        if int(root.data) == int(target):
             return True
 
-        if root.data < target:
-            if binary_search(target, root.left):
+        if int(root.data) < int(target):
+            if binary_search(target, root.right):
                 return True
 
-        if binary_search(target, root.left):
-            return True
+        if int(root.data) > int(target):
+            if binary_search(target, root.left):
+                return True
 
 
 def search(args):
